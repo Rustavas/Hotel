@@ -17,7 +17,7 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+  <link rel="stylesheet" href="./css/main.min.css">
   <!-- <style>
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Handlee&family=Lato&family=Mulish&family=Open+Sans:ital,
         wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Roboto+Flex:opsz,wght@8..144,300;8..144,500&display=swap');
@@ -25,65 +25,142 @@
 </head>
 
 <body>
-  <header>
-    <a href="">
-      <img src="./images/logo.svg" alt="Logo">
+  <header class="page-header">
+    <a href="" class="page-header__logo-link">
+      <svg width="70" height="64">
+        <use href="./images/icons.svg#logo"></use>
+      </svg>
     </a>
-    <ul>
-      <li><a href="" rel="noopener noreferrer nofollow">Home</a></li>
-      <li><a href="" rel="noopener noreferrer nofollow">The hut</a></li>
-      <li><a href="" rel="noopener noreferrer nofollow">The area</a></li>
-      <li><a href="" rel="noopener noreferrer nofollow">booking</a></li>
-      <li><a href="" rel="noopener noreferrer nofollow">About us</a></li>
-      <li><a href="" rel="noopener noreferrer nofollow">Faq</a></li>
+    <ul class="page-header__nav-list">
+      <li class="page-header__nav-item"><a href="" class="page-header__nav-link"
+          rel="noopener noreferrer nofollow">Home</a></li>
+      <li class="page-header__nav-item"><a href="" class="page-header__nav-link"
+          rel="noopener noreferrer nofollow">The
+          hut</a></li>
+      <li class="page-header__nav-item"><a href="" class="page-header__nav-link"
+          rel="noopener noreferrer nofollow">The
+          area</a></li>
+      <li class="page-header__nav-item"><a href="" class="page-header__nav-link"
+          rel="noopener noreferrer nofollow">booking</a></li>
+      <li class="page-header__nav-item"><a href="" class="page-header__nav-link"
+          rel="noopener noreferrer nofollow">About us</a></li>
+      <li class="page-header__nav-item"><a href="" class="page-header__nav-link"
+          rel="noopener noreferrer nofollow">Faq</a></li>
     </ul>
-    <button type="button">Book now</button>
+    <button type="button" class="page-header__button">Book now</button>
   </header>
   <main>
-    <hero>
-      <h1>Find peace in the Forest</h1>
-      <p>Come and stay in out hut hotel near Mariager Fjord in Denmark</p>
-
-    </hero>
-    <section>
-      <h2>The Cabins</h2>
-      <p>Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly,
-        are designed by architect Sigurd Larsen. They all have an open space
-        with a double bed, a double sofa bed, kitchen, separate toilet and an
-        outdoor shower. On the roof, surrounded by treetops, there is a terrace,
-        which is about nine meters above ground. The cottages are built around
-        tall,
-        old trees that go through the entire cottage from floor to ceiling.</p>
-      <button type="button">Read More</button>
-      <a href="" rel="noopener noreferrer nofollow">
-        <img src="" alt="">
-      </a>
-      <a href="" rel="noopener noreferrer nofollow">
-        <img src="" alt="">
-      </a>
-      <a href="" rel="noopener noreferrer nofollow">
-        <img src="" alt="">
-      </a>
-      <a href="" rel="noopener noreferrer nofollow">
-        <img src="" alt="">
-      </a>
+    <section class="hero">
+      <h1 class="hero__title">Find peace in the Forest</h1>
+      <p class="hero__text">Come and stay in out hut hotel near Mariager Fjord
+        in Denmark</p>
+    </section>
+    <section class="cabins">
+      <div class="cabins__top">
+        <div class="cabins__content">
+          <h2 class="cabins__title">The Cabins</h2>
+          <p class="cabins__text">Løvtag’s three exclusive and comfortable
+            cabins,
+            Et, Ro and Ly,
+            are designed by architect Sigurd Larsen. They all have an open space
+            with a double bed, a double sofa bed, kitchen, separate toilet and
+            an
+            outdoor shower. On the roof, surrounded by treetops, there is a
+            terrace,
+            which is about nine meters above ground. The cottages are built
+            around
+            tall,
+            old trees that go through the entire cottage from floor to ceiling.
+          </p>
+          <button type="button" class="cabins__button">Read More</button>
+        </div>
+        <img class="cabins__img1" src="./images/cabins1.jpg" alt="">
+      </div>
+      <ul class="cabins__gallery-list">
+        <li class="cabins__gallery-item">
+          <a href="" rel="noopener noreferrer nofollow">
+            <img src="./images/cabins2.jpg" alt="">
+          </a>
+        </li>
+        <li class="cabins__gallery-item">
+          <a href="" rel="noopener noreferrer nofollow">
+            <img src="./images/cabins3.jpg" alt="">
+          </a>
+        </li>
+        <li class="cabins__gallery-item">
+          <a href="" rel="noopener noreferrer nofollow">
+            <img src="./images/cabins4.jpg" alt="">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="forest">
+      <div class="forest__map">
+        <a class="forest__link" href="" rel="noopener noreferrer nofollow">
+          <img class="forest__img" src="./images/map.jpg" alt="" </a>
+      </div>
+      <div class="forest__content">
+        <h2 class="forest__title">The Forest</h2>
+        <p class="forest__text">Løvtag’s three exclusive and comfortable cabins,
+          Et, Ro and Ly, are designed by architect Sigurd Larsen.
+          They all have an open space with a double bed, a double sofa bed,
+          kitchen, separate toilet and an outdoor shower. On the roof,
+          surrounded by treetops, there is a terrace, which is about nine
+          meters
+          above ground.
+          The cottages are built around tall, old trees that go through the
+          entire
+          cottage from floor to ceiling.
+        </p>
+        <button class="forest__button" type="button">Read More</button>
+      </div>
+    </section>
+    <section class="facilities">
+      <h2 class="facilities__title">Facilities</h2>
+      <ul class="facilities__list">
+        <li class="facilities__item"><svg width="130" height="70" class="facilities=icon">
+            <use href="./images/icons.svg#fridge"></use>
+          </svg><p class="facilities__sign">Mini fridge</p></li>
+        <li class="facilities__item"><svg width="130" height="70">
+            <use href="./images/icons.svg#kitchen"></use>
+          </svg><p class="facilities__sign">Kitchenette</p></li>
+        <li class="facilities__item"><svg width="130" height="70">
+            <use href="./images/icons.svg#coffee"></use>
+          </svg><p class="facilities__sign">Coffee machine</p></li>
+        <li class="facilities__item"><svg width="130" height="70">
+            <use href="./images/icons.svg#kettl"></use>
+          </svg><p class="facilities__sign">Electric tea kettle</p></li>
+        <li class="facilities__item"><svg width="130" height="70">
+            <use href="./images/icons.svg#park"></use>
+          </svg><p class="facilities__sign">Parking</p></li>
+        <li class="facilities__item"><svg width="130" height="70">
+            <use href="./images/icons.svg#trees"></use>
+          </svg><p class="facilities__sign">Breathtaking views</p></li>
+        <li class="facilities__item"><svg width="130" height="70">
+            <use href="./images/icons.svg#temperature"></use>
+          </svg><p class="facilities__sign">Floor heating</p></li>
+        <li class="facilities__item"><svg width="130" height="70">
+            <use href="./images/icons.svg#plug"></use>
+          </svg><p class="facilities__sign">230V</p></li>
+        <li class="facilities__item"><svg width="130" height="70">
+            <use href="./images/icons.svg#wifi"></use>
+          </svg><p class="facilities__sign">WiFi</p></li>
+        <li class="facilities__item"><svg width="130" height="70">
+            <use href="./images/icons.svg#shower"></use>
+          </svg><p class="facilities__sign">Shower</p></li>
+        <li class="facilities__item"><svg width="130" height="70">
+            <use href="./images/icons.svg#toilet"></use>
+          </svg><p class="facilities__sign">Flushing toilets</p></li>
+        <li class="facilities__item"><svg width="130" height="70">
+            <use href="./images/icons.svg#towels"></use>
+          </svg><p class="facilities__sign">Bedding & towels</p></li>
+      </ul>
     </section>
     <section>
-      <a href="" rel="noopener noreferrer nofollow">
-        <img src="" alt="">
-      </a>
-      <h2>The Forest</h2>
-      <p>Løvtag’s three exclusive and comfortable cabins, 
-        Et, Ro and Ly, are designed by architect Sigurd Larsen. 
-        They all have an open space with a double bed, a double sofa bed, 
-        kitchen, separate toilet and an outdoor shower. On the roof, 
-        surrounded by treetops, there is a terrace, which is about nine meters above ground. 
-        The cottages are built around tall, old trees that go through the entire cottage from floor to ceiling.</p>
-        <button type="button">Read More</button>
+      more about us
     </section>
     <section>
-      <h2>Facilities</h2>
-      
+      <h2>Stay in touch with us</h2>
     </section>
   </main>
   <footer>
