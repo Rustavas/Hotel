@@ -4,4 +4,6 @@
 
 2. img-size
 
-3. icons-size
+зазор ниже img в contacts не убирается с помощью display: block;
+
+как опустить строку вниз (footer letter-symbol)
